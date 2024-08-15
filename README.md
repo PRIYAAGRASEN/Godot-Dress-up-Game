@@ -2,7 +2,7 @@
 This is my first Godot Project. 
 
 
-So this is a Dress Up game
+So this is a Dress Up game using GD Script
 
 ->In this game, you can drag the object from the wardrobe and place it on the character present
 
