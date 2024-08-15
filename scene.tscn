@@ -1,0 +1,70 @@
+[gd_scene load_steps=11 format=3 uid="uid://dc0y70ghbbjve"]
+
+[ext_resource type="PackedScene" uid="uid://bkvgxnf3l40ss" path="res://background.tscn" id="1_fyxwt"]
+[ext_resource type="PackedScene" uid="uid://qcqi2ilevreb" path="res://character.tscn" id="2_r3rcu"]
+[ext_resource type="PackedScene" uid="uid://cwew477w7ybw1" path="res://object.tscn" id="3_c3q8g"]
+[ext_resource type="PackedScene" uid="uid://j3nwh4nxf6s6" path="res://platform.tscn" id="4_a6hyc"]
+[ext_resource type="PackedScene" uid="uid://ungenbk3okhj" path="res://pant.tscn" id="5_uea6f"]
+[ext_resource type="PackedScene" uid="uid://dy2lr0dew2wut" path="res://platformpant.tscn" id="6_4nqe2"]
+[ext_resource type="PackedScene" uid="uid://ddm41yh0cim4t" path="res://shoe.tscn" id="7_103bt"]
+[ext_resource type="PackedScene" uid="uid://yfkms6t1so21" path="res://platformshoe.tscn" id="8_bknjf"]
+[ext_resource type="PackedScene" uid="uid://cfojde7dy2q0c" path="res://shirt.tscn" id="9_3g0xl"]
+[ext_resource type="PackedScene" uid="uid://cqd7jmhyvxsyj" path="res://platformshirt.tscn" id="10_usy25"]
+
+[node name="scene" type="Node2D"]
+
+[node name="Node2D" parent="." instance=ExtResource("1_fyxwt")]
+position = Vector2(-1, 7)
+scale = Vector2(0.72061, 0.571483)
+
+[node name="character" parent="." instance=ExtResource("2_r3rcu")]
+position = Vector2(264, 382)
+scale = Vector2(0.379, 0.386)
+
+[node name="hat" parent="." instance=ExtResource("3_c3q8g")]
+position = Vector2(676, 236)
+scale = Vector2(0.75, 0.635)
+
+[node name="platform" parent="." instance=ExtResource("4_a6hyc")]
+position = Vector2(667, 231)
+scale = Vector2(2.36747, 1.82602)
+script = null
+
+[node name="platform2" parent="." instance=ExtResource("4_a6hyc")]
+position = Vector2(180, 170)
+scale = Vector2(2.75024, 1.96021)
+
+[node name="shirt" parent="." instance=ExtResource("9_3g0xl")]
+position = Vector2(831, 280)
+
+[node name="platformshirt" parent="." instance=ExtResource("10_usy25")]
+position = Vector2(830, 286)
+scale = Vector2(3.37679, 2.82369)
+
+[node name="platformshirt2" parent="." instance=ExtResource("10_usy25")]
+position = Vector2(193, 365)
+scale = Vector2(2.68095, 2.00302)
+
+[node name="pant" parent="." instance=ExtResource("5_uea6f")]
+position = Vector2(857, 410)
+scale = Vector2(0.846219, 0.893048)
+
+[node name="platformpant" parent="." instance=ExtResource("6_4nqe2")]
+position = Vector2(853, 402)
+scale = Vector2(0.0929314, 0.0938729)
+
+[node name="platformpant2" parent="." instance=ExtResource("6_4nqe2")]
+position = Vector2(210, 429)
+scale = Vector2(0.0959812, 0.0948574)
+
+[node name="shoe" parent="." instance=ExtResource("7_103bt")]
+position = Vector2(691, 354)
+scale = Vector2(0.66, 0.644)
+
+[node name="platformshoe" parent="." instance=ExtResource("8_bknjf")]
+position = Vector2(206, 519)
+scale = Vector2(0.091, 0.076)
+
+[node name="platformshoe2" parent="." instance=ExtResource("8_bknjf")]
+position = Vector2(688, 349)
+scale = Vector2(0.118349, 0.0652208)

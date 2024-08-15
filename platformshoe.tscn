@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://yfkms6t1so21"]
+
+[ext_resource type="Script" path="res://platformshoe.gd" id="1_sbfmi"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nj4yf"]
+size = Vector2(77, 79)
+
+[node name="platformshoe" type="StaticBody2D" groups=["dropableshoe"]]
+script = ExtResource("1_sbfmi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 0.5)
+scale = Vector2(18.176, 18.176)
+shape = SubResource("RectangleShape2D_nj4yf")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+visible = false
+offset_right = 40.0
+offset_bottom = 40.0
